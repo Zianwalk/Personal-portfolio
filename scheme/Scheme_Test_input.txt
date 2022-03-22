@@ -1,4 +1,4 @@
-當測試「Test data 1 of 3」時，Input為>>1
+1
 ; =============== Problem 8 可見數據 ====================
 ab
 (define a "=============== Problem 8 viewable case =================")
