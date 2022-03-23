@@ -6040,7 +6040,7 @@ class Parser {
     int uTestNum ;
     bool quit = false ;
 
-    cin >> uTestNum ;
+    // cin >> uTestNum ;
     
 
     cout << "Welcome to OurScheme!" << endl << endl ;
