@@ -1,5 +1,4 @@
-1
-; =============== Problem 8 ¥i¨£¼Æ¾Ú ====================
+; =============== Problem 8 å¯è¦‹æ•¸æ“š ====================
 ab
 (define a "=============== Problem 8 viewable case =================")
 a
@@ -62,7 +61,7 @@ hello
         
 ; 3. To give a (symbolic) name to an object
 
-; Meaning of DEFINE revisited ("¥O")
+; Meaning of DEFINE revisited ("ä»¤")
 
 ; Basically, DEFINE sets up a (temporary) binding between a symbol 
 ; and an S-expression
@@ -70,7 +69,7 @@ hello
 ; DEFINE sets up the binding between a name and an internal data structure
 
 abc
-(define a 5)   ; "¥Oa¬°5"; Åý§Ú­Ì§â"¨º­ÓªF¦è"¤SºÙ¬°'a'
+(define a 5)   ; "ä»¤aç‚º5"; è®“æˆ‘å€‘æŠŠ"é‚£å€‹æ±è¥¿"åˆç¨±ç‚º'a'
 (define b (define a 5))  ; 'define' must appear at the toplevel
 (define 5 10)            ; first argument of 'define' must be a symbol
 (define cons 5          ; first argument of 'define' cannot be the name 
@@ -86,7 +85,7 @@ abc
 (define bcd (cons 3 5))
 bcd             ; Is 'bcd' a name of some thing?
 a             ; Is 'a' a name of some thing?
-(define x '((3 4) 5))   ; Åý§Ú­Ì§â"¨º­ÓªF¦è"¤SºÙ¬°'x'
+(define x '((3 4) 5))   ; è®“æˆ‘å€‘æŠŠ"é‚£å€‹æ±è¥¿"åˆç¨±ç‚º'x'
 x              ; Is 'x' a name of some thing?
 
 ; Combining (1), (2) and (3)
@@ -147,7 +146,7 @@ hello
 
 (exit 0)
 
-; =============== Problem 9 ¥i¨£¼Æ¾Ú ====================
+; =============== Problem 9 å¯è¦‹æ•¸æ“š ====================
 ab
 (define a "=============== Problem 9 viewable case =================")
 a
@@ -307,7 +306,7 @@ a
 (eqv? c b)(equal? c b). 5
 (+ 10 20)(  . 5 )
 
-; =============== Problem 10 ¥i¨£¼Æ¾Ú ====================
+; =============== Problem 10 å¯è¦‹æ•¸æ“š ====================
 ab
 (define a "=============== Problem 10 viewable case =================")
 a
@@ -400,7 +399,7 @@ a
       ((> 4 3) 'good)
 )
 
-; more ·d©Çexamples
+; more æžæ€ªexamples
 
 (define a 10)
 (define b 20)
@@ -432,7 +431,7 @@ else ; should get >>(1 2)<<
 ) ; should get nil
 
 
-; =============== Problem 11 ¥i¨£¼Æ¾Ú ====================
+; =============== Problem 11 å¯è¦‹æ•¸æ“š ====================
 ab
 (define a "=============== Problem 11 viewable case =================")
 a
@@ -653,7 +652,7 @@ b
 (car (cons (+ 5 (car '(10 20))) (exit 20)))
 (cons 10 20 (+ 5 "Hi"))
 
-; =============== Problem 12 ¥i¨£¼Æ¾Ú ====================
+; =============== Problem 12 å¯è¦‹æ•¸æ“š ====================
 ab
 (define a "=============== Problem 12 viewable case =================")
 a
@@ -840,7 +839,7 @@ cc
   (car '((30) 40))
 )  
     
-; =============== Problem 13 ¥i¨£¼Æ¾Ú ====================
+; =============== Problem 13 å¯è¦‹æ•¸æ“š ====================
 ab
 (define a "=============== Problem 13 viewable case =================")
 a
