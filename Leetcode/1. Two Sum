@@ -11,7 +11,7 @@ public:
                 ans.push_back( 0 ) ;
                 ans.push_back( i ) ;
                 break ;
-            }
+            } // if ()
             
             else {
                 
@@ -21,11 +21,11 @@ public:
                         ans.push_back( i - j ) ;
                         ans.push_back( i ) ;
                         return ans ;
-                    }
-                }
-            }
+                    } // if ()
+                } // for ()
+            } // else
             
-        }
+        } // for ()
         
 
         return ans;
