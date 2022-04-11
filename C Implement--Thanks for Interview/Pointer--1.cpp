@@ -8,7 +8,7 @@ int main()
     printf("%s\n", arr) ;
     printf("%s\n", ptr) ;
     
-    unsigned int l0,l1, l2 ;
+    unsigned int l0, l1, l2 ;
     unsigned int * temp = &l0 ;
     
     l0 = 0x1 ;
