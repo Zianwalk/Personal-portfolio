@@ -16,3 +16,11 @@
     如果文法有錯，我的程式可以告知你，在什麼地方發生錯誤，
     如果合乎文法，我的程式會將 commands 做運算，給出 commands 在正常情況下該有的 output.
   
+  
+3. About syntax and commands :
+
+    如果你想更好的了解這個程式，或者是說你想對 scheme 指令有初步的了解，
+    非常歡迎您點開 folder 裡面的 Scheme_Note.txt , 
+    在這裡面介紹了這隻程式所遵循的文法和一些被 implement 的指令，
+
+
