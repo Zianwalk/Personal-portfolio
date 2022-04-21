@@ -1,17 +1,5 @@
-<S-exp> ::= <ATOM> 
-            | LEFT-PAREN <S-exp> { <S-exp> } [ DOT <S-exp> ] RIGHT-PAREN
-            | QUOTE <S-exp>
-            
-<ATOM>  ::= SYMBOL | INT | FLOAT | STRING 
-            | NIL | T | LEFT-PAREN RIGHT-PAREN
-            
-
-
-
-
-
-
 # 括號裡面的數字代表該 function 能接受的 arguments
+# 轉換成實際的 Scheme language will be like ( cons 1 2 ), ( list 1 2 34 5 )
 
 1. Constructors
 
