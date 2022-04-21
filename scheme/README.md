@@ -1,5 +1,8 @@
 # Interpreter for Scheme 的介紹：
 
+0. I've got interested in this program, how can I start to implement ?  
+
+    我已經將這隻程式所依循的原始文件 upload , 關於這隻程式所有的 details, 你都可以在這兩份文件內找到。  
 
 1. what is Scheme ?
 
