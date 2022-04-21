@@ -26,7 +26,7 @@
 
     there only exists 3 kinds of commands,
     
-    first,  start with  <ATOM>  and only  <ATOM>  ,  
+    first,  start with <ATOM> and only <ATOM> ,  
       
     second, start with '(' and go on arguments then end up with ')' ,   
     ex : ( arguments arguments )  
