@@ -36,7 +36,14 @@
     third,  start with '   and go on arguments.  
     ex : 'arguments
     
+    the basic commands will be like :
     
+    ( + 1245 53 )  
+    ( cons 6 5555 )  
+    ( list 5675 + )  
+      
+    ( define a + )
+    ( a 132 456 ) // after define a as plus, a become new operator here.  
     
     
     
