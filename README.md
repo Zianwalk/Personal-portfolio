@@ -19,7 +19,7 @@
 4. In scheme :
    
    這是我在大學 4 年，所獲得訓練的程式能力展現。
-   這是一個由我獨立實作的 Interpreter ( 直譯器 ) ，
+   是一個由我獨立實作的 Interpreter ( 直譯器 ) ，
    我想很多人可能沒聽過 Interpreter，但你一定聽過 compiler。
    
    那以下是我節錄自 wiki 對 Interpreter 的一段簡單介紹，希望能讓你有一個簡單的認識 ：
