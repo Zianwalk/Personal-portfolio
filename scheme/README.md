@@ -24,6 +24,7 @@
 
 4. I've prepared some commands can quickly demo and show how it will be,
 
+    before you see these commands I hope you know,  
     there only exists 3 kinds of commands,
     
     first,  start with ATOM and only ATOM ,  
