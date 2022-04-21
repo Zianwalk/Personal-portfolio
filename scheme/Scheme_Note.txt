@@ -6,6 +6,13 @@
             | NIL | T | LEFT-PAREN RIGHT-PAREN
             
 
+
+
+
+
+
+# 括號裡面的數字代表該 function 能接受的 arguments
+
 1. Constructors
 
   cons (2)
