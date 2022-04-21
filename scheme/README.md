@@ -18,7 +18,7 @@
 3. About syntax and commands :
 
     如果你想更好的了解這個程式，或者是說你想對 scheme 指令有初步的了解，  
-    非常歡迎您點開 folder 裡面的 Scheme_Note.txt ,  
+    非常歡迎您點開 folder 裡面的 Syntax, Implement commands ,  
     在這裡面介紹了這隻程式所遵循的文法和一些被 implement 的指令。
 
 
