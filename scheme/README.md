@@ -42,7 +42,7 @@
     ( cons 6 5555 )  
     ( list 5675 + )  
       
-    ( define a + )
+    ( define a + )  
     ( a 132 456 ) // after define a as plus, a become new operator here.  
     
     
