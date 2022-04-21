@@ -4,3 +4,22 @@
             
 <ATOM>  ::= SYMBOL | INT | FLOAT | STRING 
             | NIL | T | LEFT-PAREN RIGHT-PAREN
+
+
+Syntax 對照表
+
+  LEFT-PAREN       // '('
+  RIGHT-PAREN      // ')'
+  INT              // e.g., '123', '+123', '-123'
+  STRING           // "string's (example)." (strings do not extend across lines)
+  DOT              // '.'
+  FLOAT            // '123.567', '123.', '.567', '+123.4', '-.123'
+  NIL              // 'nil' or '#f', but not 'NIL' nor 'nIL'
+  T                // 't' or '#t', but not 'T' nor '#T'
+  QUOTE            // '
+  SYMBOL           // a consecutive sequence of printable characters that are
+                   // not numbers, strings, #t or nil, and do not contain 
+                   // '(', ')', single-quote, double-quote, semi-colon and 
+                   // white-spaces ; 
+                   // Symbols are case-sensitive 
+                   // (i.e., uppercase and lowercase are different);
