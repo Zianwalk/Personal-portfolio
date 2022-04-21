@@ -4,10 +4,7 @@
 1. what is Scheme ?
 
     Scheme is a programming language. Is a kind of LISP.
-    This is Scheme intruduction in the wiki : https://zh.wikipedia.org/wiki/Scheme
-  
-  
-  
+    This is Scheme intruduction in the wiki : https://zh.wikipedia.org/wiki/Scheme  
 
 2. what it can do / or 這程式可以做到什麼樣的一個地步？
 
@@ -25,3 +22,10 @@
     在這裡面介紹了這隻程式所遵循的文法和一些被 implement 的指令。
 
 
+4. I've prepared some commands can quickly demo and show how it will be,
+
+    there only exists 3 kinds of commands,
+    
+    first,  start with  <ATOM>  and only  <ATOM>  ,  
+    second, start with '(' and go on arguments then end up with ')' ,  
+    third,  start with '   and go on arguments. -- there isn't any wrong in this line.  
