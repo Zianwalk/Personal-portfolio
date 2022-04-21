@@ -27,5 +27,10 @@
     there only exists 3 kinds of commands,
     
     first,  start with  <ATOM>  and only  <ATOM>  ,  
-    second, start with '(' and go on arguments then end up with ')' ,  
-    third,  start with '   and go on arguments. -- there isn't any wrong in this line.  
+      
+    second, start with '(' and go on arguments then end up with ')' ,   
+    ex : ( arguments arguments )  
+    
+      
+    third,  start with '   and go on arguments.  
+    ex : 'arguments
