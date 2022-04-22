@@ -25,9 +25,9 @@
     在這裡面介紹了這隻程式所遵循的文法和一些被 implement 的指令。
 
 
-# I've prepared some commands can quickly demo and show how it will be,
+# I've prepared some commands can quickly demo
 
-    before you see these commands I hope you know,  
+    Before you see these commands I hope you know,  
     there only exists 3 kinds of commands,
     
     first,  start with ATOM and only ATOM ,  
