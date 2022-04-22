@@ -49,4 +49,14 @@
     ( a 132 456 ) // after define a as plus, a become new operator here.  
     
     
+# QA Session :
+
+1. 為什麼我在按下 enter 以後，程式沒有反應？
+
+    會出現這種情況，只有一種可能，截至 enter 為止，你的command 都合乎文法，  
+    但是程式並沒有等到預期的結尾，所以這段 command 並認定為尚未 key 完的 command，  
+    那因為有支援，cross line command，所以你只要把預期的結尾補足，相信就能看到 output.
+
+
+    
     
