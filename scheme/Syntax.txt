@@ -1,3 +1,5 @@
+# BNF/EBNF Expression
+
 <S-exp> ::= <ATOM> 
             | LEFT-PAREN <S-exp> { <S-exp> } [ DOT <S-exp> ] RIGHT-PAREN
             | QUOTE <S-exp>
@@ -6,7 +8,7 @@
             | NIL | T | LEFT-PAREN RIGHT-PAREN
 
 
-Syntax 對照表
+# Syntax 對照表
 
   LEFT-PAREN       // '('
   RIGHT-PAREN      // ')'
@@ -23,3 +25,4 @@ Syntax 對照表
                    // white-spaces ; 
                    // Symbols are case-sensitive 
                    // (i.e., uppercase and lowercase are different);
+  
