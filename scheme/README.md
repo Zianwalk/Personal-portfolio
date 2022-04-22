@@ -34,6 +34,7 @@
       
     second, start with '(' and go on arguments then end up with ')' ,   
     ex : ( arguments arguments )  
+    Note : most of the functions I implement, follow this type.  
     
       
     third,  start with '   and go on arguments.  
