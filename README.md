@@ -2,21 +2,13 @@
 
 這部分主要是我個人的一個經歷，包含一些作品集的部分，也都會放在這上面。
 
-1. In C Implement--Thanks for Interview :
-  
-   主要是我個人在面試的時候，覺得自己回答不夠完整的問題，那經由一些簡單的程式，協助我更加清楚的釐清觀念。
-  
-2. In Leetcode :
-  
-   主要是紀錄我在 Leetcode 上的成長過程，希望能經由前後程式的對比，更直觀的了解在這方面能力的成長。
-
-3. In college work :
+# In college work :
 
    some Teamworks, like DS, OS, CA, But there are some problems.  
    在這些作品裡面，我確實參與並解決了大部分的問題，但是這些作品距離現在都已經有一段時間了，  
    我很去界定說哪些 part 是由我完成，所以我正在考慮將這個部分刪除。
   
-4. In scheme :
+# In scheme :
    
    這是我在大學 4 年，所獲得訓練的程式能力展現。  
    是一個由我獨立實作的 Interpreter ( 直譯器 )，  
