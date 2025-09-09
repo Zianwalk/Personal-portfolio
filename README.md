@@ -5,8 +5,8 @@
 # In college work :
 
    some Teamworks, like DS, OS, CA, But there are some problems.  
-   在這些作品裡面，我確實參與並解決了大部分的問題，但是這些作品距離現在都已經有一段時間了，  
-   我很去界定說哪些 part 是由我完成，所以我正在考慮將這個部分刪除。
+   在這些作品裡面，我確實參與並解決了大部分的問題，
+   但是這些作品距離現在都已經有一段時間了，我很去界定說哪些 part 是獨立由我完成。
   
 # In scheme :
    
