@@ -1,4 +1,4 @@
-# OurScheme - Interpreter for Scheme 的介紹：
+# OurScheme - Interpreter for Scheme 的介紹： ( Rewrite readme ing )
 
 ---
 
