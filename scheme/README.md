@@ -106,7 +106,7 @@ Atom 是 最基本、不可再分解的表達式，不使用括號。
 
 ``` diff
 <S-exp> ::= <ATOM> 
-+           | LEFT-PAREN <S-exp> { <S-exp> } [ DOT <S-exp> ] RIGHT-PAREN
++           | LEFT-PAREN <S-exp> { <S-exp> } [ DOT <S-exp> ] RIGHT-PAREN 
             | QUOTE <S-exp>    
 ```
 
@@ -114,6 +114,55 @@ Atom 是 最基本、不可再分解的表達式，不使用括號。
 - 串列（List）
 - 點對（Dotted Pair）
 - 巢狀結構
+
+---
+
+# 4. 錯誤處理機制
+
+本程式能偵測並回報多種語法錯誤，包括：
+
+- 非預期的 token
+- 缺少右括號 )
+- 字串未正確關閉，左括號 '(' 缺少對應的 ')' 
+
+當錯誤發生時，系統會輸出：
+
+- 錯誤類型
+- 發生的行號（ Line ）
+- 發生的欄位（ Column ）
+- 對應的錯誤 token
+
+---
+
+# 5. 語法與已實作指令
+
+若想更深入了解：
+
+- 本程式所遵循的語法規則（Grammar）
+- token 的定義
+- 已實作的 Scheme 指令與內建函式
+
+請參考專案資料夾中的以下文件：
+
+```
+scheme/
+├── 原始文件/
+│   ├── OurSchemeProj1-UTF-8.txt
+│   └── OurSchemeProj2-UTF-8.txt
+└── Implement commands.txt
+```
+
+這些文件詳細說明了本專案所支援的語法與功能範圍。
+
+---
+# 6. 總結
+
+本專案展示了 Scheme 系統中最核心的基礎技術，包括：
+
+- 詞彙分析（Lexical Analysis）
+- S-expression 語法解析（Parsing）
+- 語法錯誤檢查
+- 結構化輸出（Pretty Printing）
 
 ---
     
