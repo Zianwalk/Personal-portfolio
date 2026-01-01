@@ -1,59 +1,120 @@
-# Interpreter for Scheme 的介紹：
-
-0. I've got interested in this program, how can I start to implement ?  
-
-    我已經將這隻程式所依循的原始文件 upload , 關於這隻程式所有的 details, 你都可以在這兩份文件內找到。  
+# OurScheme - Interpreter for Scheme 的介紹：
 
 ---
 
-1. what is Scheme ?
+# 1. 什麼是 Scheme？
 
-    Scheme is a programming language. Is a kind of LISP.
-    This is Scheme intruduction in the wiki : https://zh.wikipedia.org/wiki/Scheme  
+Scheme 是一種 Lisp 家族的程式語言，其最大特色是語法極度簡潔，並且以 S-expression（符號運算式） 作為程式的基本結構。
+在 Scheme 中，所有程式與資料都以 S-expression 表示，這樣的設計使得 Scheme 非常適合用來學習：
+
+- 程式語言設計
+- 語法分析（Parsing）
+- 直譯器與編譯器的基礎原理
+
+關於 Scheme 的背景介紹，可參考維基百科：
+👉 https://zh.wikipedia.org/wiki/Scheme
 
 ---
 
-2. what it can do / or 這程式可以做到什麼樣的一個地步？
+# 2. 這個程式可以做到什麼？
 
-    input 一段標準的 Scheme 指令，  
-    （ even including some comments, moreover your commands cross line. My program can handle !! ），  
-    這個程式會將 commands 切成 token, 會去檢查 commands 是否符合 Scheme 的文法，  
-    如果文法有錯，我的程式可以告知你，在什麼地方發生錯誤，  
-    如果合乎文法，我的程式會將 commands 做運算，給出 commands 在正常情況下該有的 output.  
+本專案實作了一個 Scheme-like 系統的前端（Front-end），主要目標在於：
+
+👉 讀取、解析、檢查並印出 S-expression
+
+具體來說，這個程式可以：
+
+1. 從標準輸入讀入 Scheme 指令
+    - 正確處理：
+        - 行註解（; 開頭）
+        - 跨行輸入的指令
+        - 巢狀的 S-expression
+ 
+2. 將輸入切割成 token（詞彙分析）
+3. 根據 OurScheme 規範檢查指令是否符合語法
+    - 當發生語法錯誤時：
+        - 指出錯誤種類
+        - 顯示錯誤發生的 行號與欄位
+
+    - 當語法正確時：
+        - 建立對應的 S-expression 資料結構
+        - 以 Pretty Print 的方式將結構化結果輸出
 
 ---
   
-3. About syntax and commands :
+# 3. Scheme 的三種表達式（S-expression 分類）
 
-    如果你想更好的了解這個程式，或者是說你想對 scheme 指令有初步的了解，  
-    非常歡迎您點開 folder 裡面的 Syntax, Implement commands ,  
-    在這裡面介紹了這隻程式所遵循的文法和一些被 implement 的指令。
+從語法結構的角度來看，Scheme 中的所有輸入都屬於 S-expression，而 S-expression 可粗分為以下三類：
 
+- atom
+- ' expression
+- ( expression )
 
-# I've prepared some commands can quickly demo
+```
+  Syntax of OurScheme :
 
-    Before you see these commands I hope you know,  
-    there only exists 3 kinds of commands,
+  <S-exp> ::= <ATOM> 
+            | LEFT-PAREN <S-exp> { <S-exp> } [ DOT <S-exp> ] RIGHT-PAREN
+            | QUOTE <S-exp>
+            
+  <ATOM>  ::= SYMBOL | INT | FLOAT | STRING 
+            | NIL | T | LEFT-PAREN RIGHT-PAREN
+```
+---
+
+# 3-1. Atom
+
+Atom 是 最基本、不可再分解的表達式，不使用括號。
+由 Syntax 可以得知 atom 分為 :
+
+```
+  <ATOM>  ::= SYMBOL | INT | FLOAT | STRING 
+            | NIL | T | LEFT-PAREN RIGHT-PAREN
+```
+
+- 數值
+    - INT
+    - FLOAT
+- 字串
+    - STRING
+- 符號
+    - SYMBOL 
+- 布林與空值
+    - true： #t
+    - false / 空串列：nil、#f、()
+
+---
+
+# 3-2. ' expression
+
+以單引號 ' 開頭的表達式稱為 Quoted Expression，表示：
+
+``` diff
+<S-exp> ::= <ATOM> 
+            | LEFT-PAREN <S-exp> { <S-exp> } [ DOT <S-exp> ] RIGHT-PAREN
++           | QUOTE <S-exp>    
+```
     
-    first,  start with ATOM and only ATOM ,  
-      
-    second, start with '(' and go on arguments then end up with ')' ,   
-    ex : ( arguments arguments )  
-    Note : most of the functions I implement, follow this type.  
-    
-      
-    third,  start with '   and go on arguments.  
-    ex : 'arguments
-    
-    the basic commands will be like :
-    
-    ( + 1245 53 )  
-    ( cons 6 5555 )  
-    ( list 5675 + )  
-      
-    ( define a + )  
-    ( a 132 456 ) // after define a as plus, a become new operator here.  
-    
+    將後面的 expression 視為「資料本身」，而非要進行運算的指令。
+    注 : ' expression 等價 ( quote expression )
+
+---
+
+# 3-3. ( expression )
+
+以一對括號包起來的表達式，是 Scheme 中最常見的結構形式。
+
+``` diff
+<S-exp> ::= <ATOM> 
++           | LEFT-PAREN <S-exp> { <S-exp> } [ DOT <S-exp> ] RIGHT-PAREN
+            | QUOTE <S-exp>    
+```
+
+括號表達式可用來表示：
+- 串列（List）
+- 點對（Dotted Pair）
+- 巢狀結構
+
 ---
     
 # QA Session :
