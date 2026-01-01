@@ -68,9 +68,11 @@
 
 # Demo
 
+在程式剛開始的時候，要輸入一個 int 數字，這是為了方便 debug，去抓testcase。 
+
 ## Boolean
 
-![Demo](demo/bool.gif)
+![Demo](demo/Bool.gif)
 
 ---
 
