@@ -161,7 +161,7 @@ scheme/
 
 - 詞彙分析（Lexical Analysis）
 - S-expression 語法解析（Parsing）
-- 語法錯誤檢查
+- 語法錯誤檢查 (Syntax Erroe Detection)
 - 結構化輸出（Pretty Printing）
 
 ---
