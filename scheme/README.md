@@ -73,21 +73,31 @@ Atom 是 最基本、不可再分解的表達式，不使用括號。
 ```
 
 - 數值
+  ```
     - INT : '123', '+123', '-123'
     - FLOAT : '123.567', '123.', '.567', '+123.4', '-.123'
-    ![Demo](demo/num.gif)
-
+  ```
+  ![Demo](demo/num.gif)
 
 - 字串
+```
     - STRING (strings do not extend across lines) : "hello", "Watch me"
-    ![Demo](demo/string.gif)
+```
+![Demo](demo/string.gif)
+
 - 符號
+```
     - SYMBOL : 非數值，字串，布與空值，也不包含單雙引號，分號
-    ![Demo](demo/symbol.gif)
+```
+![Demo](demo/symbol.gif)
+
 - 布林與空值
+```
     - true ： #t, t
-    - false / 空串列 ： nil, (), #f, f
-    ![Demo](demo/bool.gif)
+    - false / 空串列 ： nil, (), #f
+```
+![Demo](demo/bool.gif)
+
 ---
 
 # 3-2. ' expression
@@ -99,9 +109,11 @@ Atom 是 最基本、不可再分解的表達式，不使用括號。
             | LEFT-PAREN <S-exp> { <S-exp> } [ DOT <S-exp> ] RIGHT-PAREN
 +           | QUOTE <S-exp>    
 ```
-    
-    將後面的 expression 視為「資料本身」，而非要進行運算的指令。
-    注 : ' expression 等價 ( quote expression )
+``` 
+將後面的 expression 視為「資料本身」，而非要進行運算的指令。
+注 : ' expression 等價 ( quote expression )
+```
+![Demo](demo/quote.gif)
 
 ---
 
@@ -119,6 +131,8 @@ Atom 是 最基本、不可再分解的表達式，不使用括號。
 - 串列（List）
 - 點對（Dotted Pair）
 - 巢狀結構
+
+![Demo](demo/paren.gif)
 
 ---
 
