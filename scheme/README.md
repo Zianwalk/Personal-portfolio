@@ -75,14 +75,19 @@ Atom 是 最基本、不可再分解的表達式，不使用括號。
 - 數值
     - INT : '123', '+123', '-123'
     - FLOAT : '123.567', '123.', '.567', '+123.4', '-.123'
+    ![Demo](demo/num.gif)
+
+
 - 字串
     - STRING (strings do not extend across lines) : "hello", "Watch me"
+    ![Demo](demo/string.gif)
 - 符號
     - SYMBOL : 非數值，字串，布與空值，也不包含單雙引號，分號
+    ![Demo](demo/symbol.gif)
 - 布林與空值
     - true ： #t, t
     - false / 空串列 ： nil, (), #f, f
-
+    ![Demo](demo/bool.gif)
 ---
 
 # 3-2. ' expression
@@ -180,33 +185,11 @@ scheme/
 
 在程式剛開始的時候，要輸入一個 int 數字，這是為了方便 debug，去抓testcase。 
 
-## Boolean
-
-![Demo](demo/Bool.gif)
-
----
-
-## Int / Float
-
-![Demo](demo/int_float.gif)
-
 ---
 
 ##  Define
 
 ![Demo](demo/define.gif)
-
----
-
-## Undefined Symbol
-
-![Demo](demo/undefined_symbol.gif)
-
----
-
-## Quote
-
-![Demo](demo/Quote.gif)
 
 ---
 
