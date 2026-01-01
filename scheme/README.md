@@ -128,9 +128,9 @@ Atom 是 最基本、不可再分解的表達式，不使用括號。
 ```
 
 括號表達式可用來表示：
-- 串列（List）
+- 函數（Function）
 - 點對（Dotted Pair）
-- 巢狀結構
+
 
 ![Demo](demo/paren.gif)
 
