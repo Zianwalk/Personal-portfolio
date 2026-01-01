@@ -4,10 +4,14 @@
 
     我已經將這隻程式所依循的原始文件 upload , 關於這隻程式所有的 details, 你都可以在這兩份文件內找到。  
 
+---
+
 1. what is Scheme ?
 
     Scheme is a programming language. Is a kind of LISP.
     This is Scheme intruduction in the wiki : https://zh.wikipedia.org/wiki/Scheme  
+
+---
 
 2. what it can do / or 這程式可以做到什麼樣的一個地步？
 
@@ -16,7 +20,8 @@
     這個程式會將 commands 切成 token, 會去檢查 commands 是否符合 Scheme 的文法，  
     如果文法有錯，我的程式可以告知你，在什麼地方發生錯誤，  
     如果合乎文法，我的程式會將 commands 做運算，給出 commands 在正常情況下該有的 output.  
-  
+
+---
   
 3. About syntax and commands :
 
@@ -49,6 +54,7 @@
     ( define a + )  
     ( a 132 456 ) // after define a as plus, a become new operator here.  
     
+---
     
 # QA Session :
 
@@ -58,6 +64,10 @@
     但是程式並沒有等到預期的結尾，所以這段 command 並認定為尚未 key 完的 command，  
     那因為有支援 cross line command，所以你只要把預期的結尾補足，相信就能看到 output.
 
+---
 
+# Demo
+
+![Demo](demo/demo.gif)
     
     
