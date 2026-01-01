@@ -317,13 +317,7 @@ scheme/
 
 # Demo
 
-在程式剛開始的時候，要輸入一個 int 數字，這是為了方便 debug，去抓testcase。 
-
----
-
-##  Define
-
-![Demo](demo/define.gif)
+程式開頭要輸入的 int 數字，是一個 test case number，這只是為了方便捕抓錯誤，本質上對程式沒有影響。
 
 ---
 
