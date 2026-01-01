@@ -128,11 +128,131 @@ Atom 是 最基本、不可再分解的表達式，不使用括號。
 ```
 
 括號表達式可用來表示：
-- 函數（Function）
 - 點對（Dotted Pair）
+![Demo](demo/dot.gif)
+- 函數（Function），Function 後面括號內的數字，為該函數可接受的最大參數值。
+  
+```
+1. Constructors
 
+  cons (2)
+  list (>= 0)
+```
+![Demo](demo/Constructors.gif)
 
-![Demo](demo/paren.gif)
+```
+2. Bypassing the default evaluation
+
+  quote (1)
+  '     (1)
+```
+![Demo](demo/quote.gif)
+
+```
+3. The binding of a symbol to an S-expression
+
+  define (2)
+
+  ; Once a symbol is defined (or "bound"), the user can enter 
+  ; this symbol, and the system will return its binding.
+  
+  ; however, the user is not allowed to redefine symbols that happen
+  ; to be system primitives such as 'cons' or 'car' or 'cdr', etc.
+```
+![Demo](demo/define.gif)
+
+```
+4. Part accessors
+
+  car (1)
+  cdr (1)
+```
+![Demo](demo/car-cdr.gif)
+
+```
+5. Primitive predicates (all functions below can only take 1 argument)
+
+  atom?
+  pair?
+  list?
+  null?
+  integer?
+  real?
+  number? // in OurSchem, real? = number?, but not in Scheme (there are complex-numbers)
+  string?
+  boolean?
+  symbol?
+```
+![Demo](demo/boolean.gif)
+
+```
+6. Basic arithmetic, logical and string operations
+
+  + (>= 2)
+  - (>= 2)
+  * (>= 2)
+  / (>= 2)
+  
+  ; in evaluating 'and' or 'or', it is possible that some "argument expr"
+  ; does not get evaluated ; use Petite Scheme to see what this means
+  ; e.g., (set! a 5) a (and (set! a 10) #f (set! a 100)) a (or #t (set! a 200)) a
+  
+  not (1)
+  and (>= 2)
+  or  (>= 2)
+  
+  ; all functions below can take 2 or more arguments
+  
+  >
+  >=
+  <
+  <=
+  =
+  string-append
+  string>?
+  string<?
+  string=?
+```
+![Demo](demo/math-compare.gif)
+
+```
+7. Eqivalence tester
+
+  eqv?    (2)
+  equal?  (2)
+```
+![Demo](demo/Eqivalence.gif)
+
+```
+8. Sequencing and functional composition
+
+  begin   (>= 1)
+  
+  ; the user may also enter, e.g., >>(car (cdr '(1 2 3 4)))<<
+```
+![Demo](demo/Sequencing.gif)
+
+```
+9. Conditionals
+
+  ; in evaluating 'if' or 'cond', it is possible that some "sub-expr"
+  ; does not get evaluated (this is the meaning of conditional expressions) ;
+  ; use Petite Scheme to check ;
+  
+  if     (2 or 3)
+  cond   (>= 1)
+```
+![Demo](demo/Conditionals.gif)
+
+```
+10. clean-environment
+
+  ; 此指令將user的definitions清空，一切重新開始
+         
+  clean-environment   (0)
+```
+![Demo](demo/clean.gif)
+
 
 ---
 
