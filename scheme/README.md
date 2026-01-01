@@ -68,6 +68,38 @@
 
 # Demo
 
+## Boolean
+
+![Demo](demo/bool.gif)
+
+---
+
+## Int / Float
+
+![Demo](demo/int_float.gif)
+
+---
+
+##  Define
+
+![Demo](demo/define.gif)
+
+---
+
+## Undefined Symbol
+
+![Demo](demo/undefined_symbol.gif)
+
+---
+
+## Quote
+
+![Demo](demo/Quote.gif)
+
+---
+
+## test case demo 
+
 ![Demo](demo/demo.gif)
     
     
