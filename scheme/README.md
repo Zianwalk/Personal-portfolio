@@ -73,15 +73,15 @@ Atom 是 最基本、不可再分解的表達式，不使用括號。
 ```
 
 - 數值
-    - INT
-    - FLOAT
+    - INT : '123', '+123', '-123'
+    - FLOAT : '123.567', '123.', '.567', '+123.4', '-.123'
 - 字串
-    - STRING
+    - STRING : "hello", "Watch me"
 - 符號
-    - SYMBOL 
+    - SYMBOL : 非數值，字串，布與空值，也不包含單雙引號，分號
 - 布林與空值
-    - true： #t
-    - false / 空串列：nil、#f、()
+    - true ： #t, t
+    - false / 空串列 ： nil, (), #f, f
 
 ---
 
