@@ -128,8 +128,6 @@ Atom 是 最基本、不可再分解的表達式，不使用括號。
 ```
 
 括號表達式可用來表示：
-- 點對（Dotted Pair）
-![Demo](demo/dot.gif)
 - 函數（Function），Function 後面括號內的數字，為該函數可接受的最大參數值。
   
 ```
