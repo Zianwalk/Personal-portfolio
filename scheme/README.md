@@ -62,6 +62,14 @@ Scheme 是一種 Lisp 家族的程式語言，其最大特色是語法極度簡�
 ```
 ---
 
+``` diff
++ Note :
++ 從 3-1 到 3-3 會分別演示 atom, ' expression, ( expression ) 並帶有 Demo.
++ Demo 開頭要輸入的 int 數字，是一個 test case number，這只是為了方便捕抓錯誤，本質上對程式沒有影響。
+```
+
+---
+
 # 3-1. Atom
 
 Atom 是 最基本、不可再分解的表達式，不使用括號。
@@ -309,15 +317,19 @@ scheme/
 
 ## 為什麼我在按下 enter 以後，程式沒有反應？
 
-    會出現這種情況，只有一種可能，截至 enter 為止，你的command 都合乎文法，  
-    但是程式並沒有等到預期的結尾，所以這段 command 並認定為尚未 key 完的 command，  
-    那因為有支援 cross line command，所以你只要把預期的結尾補足，相信就能看到 output.
+```
+會出現這種情況，只有一種可能，截至 enter 為止，你的command 都合乎文法，  
+但是程式並沒有等到預期的結尾，所以這段 command 並認定為尚未 key 完的 command，  
+那因為有支援 cross line command，所以你只要把預期的結尾補足，相信就能看到 output.
+```
 
 ---
 
 # Demo
 
+```
 程式開頭要輸入的 int 數字，是一個 test case number，這只是為了方便捕抓錯誤，本質上對程式沒有影響。
+```
 
 ---
 
