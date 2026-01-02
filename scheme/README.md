@@ -269,7 +269,7 @@ Atom 是 最基本、不可再分解的表達式，不使用括號。
 - 發生的欄位（ Column ）
 - 對應的錯誤 token
 
-![Demo](demo/errot.gif)
+![Demo](demo/error.gif)
 
 ---
 
